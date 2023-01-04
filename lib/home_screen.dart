@@ -49,6 +49,11 @@ class HomeScreenState extends State<HomeScreen> {
       ),
       backgroundColor: Colors.black,
       body: AnimatedSwitcher(
+        transitionBuilder: (child, animation) => SizeTransition(
+          axis: Axis.horizontal,
+          sizeFactor: animation,
+          child: child,
+        ),
         duration: const Duration(
           milliseconds: 1000,
         ),
