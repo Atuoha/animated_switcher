@@ -53,10 +53,11 @@ class HomeScreenState extends State<HomeScreen> {
           axis: Axis.horizontal,
           sizeFactor: animation,
           child: child,
-        ),
+        ), // you can pretty use any form of transition here like scale or rotation
         duration: const Duration(
-          milliseconds: 1000,
+          milliseconds: 2000,
         ),
+        reverseDuration: const  Duration(milliseconds: 500),
         child: items[index],
       ),
     );
