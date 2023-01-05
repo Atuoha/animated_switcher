@@ -11,6 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MaterialApp(
         home: const SharedScreen(),
+        // home: const HomeScreen(),
+        // home: const FadingWidgets(),
+
         theme: ThemeData.dark(),
       );
 }
