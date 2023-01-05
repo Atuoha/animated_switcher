@@ -56,7 +56,7 @@ class _FadingWidgetsState extends State<FadingWidgets> {
           children: [
             ElevatedButton(
               onPressed: () => toggleBtn(),
-              child: const Text('Toggle Fl Button'),
+              child:  Text(isBtnVisible ?'Hide Fl Btn': 'Show Fl Btn'),
             ),
           ],
         ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
 import 'other_anime_stuffs/fading_widgets.dart';
+import 'other_anime_stuffs/page_transition/shared_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
-        home: const FadingWidgets(),
+        home: const SharedScreen(),
         theme: ThemeData.dark(),
       );
 }
